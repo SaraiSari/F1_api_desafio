@@ -27,8 +27,8 @@ interface HeaderGPIProps {
 function HeaderGPI({ isMobile = false }: HeaderGPIProps) {
   const actionsMenu = [
     {
-      name: "Item 1",
-      href: "/", // Path to navigate
+      name: "Temporadas",
+      href: "/temporadas", // Path to navigate
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -47,8 +47,8 @@ function HeaderGPI({ isMobile = false }: HeaderGPIProps) {
       ), // Icon heroicons
     },
     {
-      name: "Item 2",
-      href: "/", // Path to navigate
+      name: "Pilotos",
+      href: "/pilotos", // Path to navigate
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -67,8 +67,8 @@ function HeaderGPI({ isMobile = false }: HeaderGPIProps) {
       ), // Icon
     },
     {
-      name: "Item 3",
-      href: "/", // Path to navigate
+      name: "Constructores",
+      href: "/constructores", // Path to navigate
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -87,8 +87,8 @@ function HeaderGPI({ isMobile = false }: HeaderGPIProps) {
       ), // Icon
     },
     {
-      name: "Item 4",
-      href: "/", // Path to navigate
+      name: "Posiciones",
+      href: "/posiciones", // Path to navigate
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -176,7 +176,7 @@ function HeaderGPI({ isMobile = false }: HeaderGPIProps) {
                   fontWeight={600}
                   color="#ebebeb"
                 >
-                  GPI project
+                  F1 API
                 </Typography>
               </Box>
               <Box className="flex flex-col pt-16 p-6 gap-6 w-full">
@@ -200,35 +200,6 @@ function HeaderGPI({ isMobile = false }: HeaderGPIProps) {
                   </div>
                 ))}
               </Box>
-            </div>
-            <div className="group flex items-center justify-between border-2 rounded-lg border-transparent p-2 hover:border-white">
-              <div className="flex items-center">
-                <Avatar className="w-25 h-25 rounded-full" alt="avatar">
-                  JD
-                </Avatar>
-                <div className="ml-4">
-                  <h4 className="text-md font-medium text-white group-hover:text-(--color-white)">
-                    John Doe
-                  </h4>
-                  <p className="text-sm font-light text-white group-hover:text-(--color-white)">
-                    Admin
-                  </p>
-                </div>
-              </div>
-              <button className="text-white cursor-pointer group-hover:text-(--color-white)">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  className="size-8"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-1.72 6.97a.75.75 0 1 0-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 1 0 1.06 1.06L12 13.06l1.72 1.72a.75.75 0 1 0 1.06-1.06L13.06 12l1.72-1.72a.75.75 0 1 0-1.06-1.06L12 10.94l-1.72-1.72Z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </button>
             </div>
           </div>
         </nav>
