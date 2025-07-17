@@ -1,8 +1,6 @@
-/**
- * Menu basico para el layout de la aplicacion desarrollada por Diego Monsalves
- */
+  
 
-import { Avatar, Box, Typography } from "@mui/material";
+import {Box, Typography } from "@mui/material";
 import logo from "../../../assets/EII_logo.png";
 import DrawerNav from "./DrawerNav";
 import { useState } from "react";
@@ -27,8 +25,8 @@ interface HeaderGPIProps {
 function HeaderGPI({ isMobile = false }: HeaderGPIProps) {
   const actionsMenu = [
     {
-      name: "Temporadas",
-      href: "/temporadas", // Path to navigate
+      name: "Carreras",
+      href: "/carreras", // Path to navigate
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -49,6 +47,26 @@ function HeaderGPI({ isMobile = false }: HeaderGPIProps) {
     {
       name: "Pilotos",
       href: "/pilotos", // Path to navigate
+      icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth={1.5}
+          stroke="currentColor"
+          className="size-6"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M12 4.5v15m7.5-7.5h-15"
+          />
+        </svg>
+      ),
+    },
+    {
+      name: "Resultados",
+      href: "/resultados", // Path to navigate
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -87,8 +105,8 @@ function HeaderGPI({ isMobile = false }: HeaderGPIProps) {
       ), // Icon
     },
     {
-      name: "Posiciones",
-      href: "/posiciones", // Path to navigate
+      name: "Resultados",
+      href: "/resultados", // Path to navigate
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -130,7 +148,7 @@ function HeaderGPI({ isMobile = false }: HeaderGPIProps) {
     <>
       {isMobile ? (
         <nav>
-          <div className="h-16 w-full bg-(--color-darkgreen)">
+          <div className="h-16 w-full bg-black">
             <div className="flex w-full h-full items-center justify-end p-4 py-0">
               <div
                 onClick={openMenuAction}
@@ -160,7 +178,7 @@ function HeaderGPI({ isMobile = false }: HeaderGPIProps) {
           ></DrawerNav>
         </nav>
       ) : (
-        <nav className="flex flex-col bg-(--color-darkgreen) w-80 h-full overflow-auto">
+        <nav className="flex flex-col bg-black w-80 h-full overflow-auto">
           <div className="flex flex-col justify-between p-4 h-full">
             <div className="flex flex-col items-center pt-10 justify-center gap-2">
               <Box
