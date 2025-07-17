@@ -19,7 +19,7 @@ function DrawerNav({ closeMenuAction, openMenu, menuItems }: DrawerNavProps) {
 
   return (
     <Drawer anchor={"right"} open={openMenu} onClose={closeMenuAction}>
-      <Box className="flex flex-col justify-between bg-(--color-white-smoke) p-4 w-[100vw] h-[100vh]">
+      <Box className="flex flex-col justify-between bg-black p-4 w-[100vw] h-[100vh]">
         <div>
           <Box className="flex flex-row justify-between p-4 items-center">
             <div className="flex items-center justify-between">
