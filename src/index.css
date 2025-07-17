@@ -20,7 +20,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   
-  --color-darkgreen: #002E38;
+  --color-darkgreen: #c00000;
   --color-blue: #003c58;
   --color-turquesa: #06717e;
   --color-gris: #ebebeb;
@@ -68,3 +68,12 @@ body {
     background-color: #f9f9f9;
   }
 }
+
+/* Configura TailwindCSS.
+
+Declara variables CSS para fuentes y colores.
+
+Establece estilos base para html, body y #root.
+
+Agrega un tema visual que se adapta al modo claro del sistema.
+

@@ -6,7 +6,7 @@ function MainLayout() {
   const { width } = useWindowDimensions();
   return (
     <>
-      <div className="flex flex-1 w-full max-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900">
+      <div className="flex flex-1 w-full max-h-screen bg-gradient-to-b from-[#0f0f0f] via-red-800 to-black">
         <div className="flex flex-1 flex-col overflow-hidden lg:flex-row max-h-screen">
           {width > 1024 ? <HeaderGPI /> : <HeaderGPI isMobile />}
 
@@ -22,3 +22,5 @@ function MainLayout() {
 }
 
 export default MainLayout;
+
+//cambiar color de fondo del header

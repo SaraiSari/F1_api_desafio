@@ -18,3 +18,10 @@ createRoot(document.getElementById("root")!).render(
     </ThemeProvider>
   </StrictMode>
 );
+
+//Monta la app en el DOM.
+// Usa modo estricto para detectar errores.
+// Aplica un tema personalizado de MUI.
+// Muestra un spinner de carga si hay componentes que se cargan de forma diferida.
+// Usa React Router para manejar las rutas.
+// Llama al componente App, donde está la lógica de navegación.

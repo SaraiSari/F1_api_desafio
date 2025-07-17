@@ -1,27 +1,39 @@
-import { lazy } from "react";
-import { Navigate } from "react-router-dom";
-import Loadable from "./Loadable";
+//import { lazy } from "react";
+//import { Navigate } from "react-router-dom";
+//import Loadable from "./Loadable";
 
 /* ***Layouts**** */
-const BlankLayout = Loadable(
-  lazy(() => import("../layouts/blank-layout/BlankLayout"))
-);
-const MainLayout = Loadable(
-  lazy(() => import("../layouts/dashboardLayout/MainLayout"))
-);
+//const BlankLayout = Loadable(
+//  lazy(() => import("../layouts/blank-layout/BlankLayout"))
+//);
+//const MainLayout = Loadable(
+//  lazy(() => import("../layouts/dashboardLayout/MainLayout"))
+//);
 
 /* ***End Layouts**** */
-const Error = Loadable(lazy(() => import("../views/authentication/Error")));
+//const Error = Loadable(lazy(() => import("../views/authentication/Error")));
+
+
 
 /* ****Pages***** */
-const Home = Loadable(lazy(() => import("../views/home/Home")));
-const MainPilotos = Loadable(
+//const Home = Loadable(lazy(() => import("../views/home/Home")));
+/*const MainPilotos = Loadable(
   lazy(() => import("../views/pilotos/MainPilotos.jsx"))
 );
 
+
+
+//ruta para listado de datos historicos
+
+
+
+
+
+
+
 /* ****End Pages***** */
 
-const Router = [
+/*const Router = [
   {
     path: "/error",
     element: <BlankLayout />,
@@ -42,10 +54,12 @@ const Router = [
         element: <Home />,
       },
       {
-        path: "pilotos",
+        path: "MainPilotos",
         exact: true,
         element: <MainPilotos />,
       },
+
+      
 //      { path: "*", element: <Navigate to="/error/404" /> },
     ],
   },
@@ -60,3 +74,4 @@ const Router = [
 ];
 
 export default Router;
+
